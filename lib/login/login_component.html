@@ -1,0 +1,22 @@
+<form>
+    <h1>Login</h1>
+    <material-input #usernameInput
+                    [(ngModel)]="username"
+                    label="Username"
+                    floatingLabel
+                    autoFocus>
+    </material-input>
+    <material-input #passwordInput
+                    [(ngModel)]="password"
+                    type="password"
+                    label="Password"
+                    floatingLabel>
+    </material-input>
+    <material-button #loginButton
+                     raised
+                     type="submit"
+                     class="green"
+                     (click)="login()">
+        Submit
+    </material-button>
+</form>
