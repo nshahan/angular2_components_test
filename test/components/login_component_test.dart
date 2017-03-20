@@ -1,13 +1,3 @@
-// Documentation & Example
-// - https://github.com/dart-lang/angular2_api_examples
-// - https://github.com/dart-lang/mockito
-// - https://github.com/google/pageloader
-
-// Manual test
-// - login_component_debug.dart with Dartium
-// or automatic test
-// $ pub run angular_test
-
 @Tags(const ['aot'])
 @TestOn('browser')
 import 'package:angular2/angular2.dart';
