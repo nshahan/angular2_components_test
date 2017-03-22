@@ -31,8 +31,7 @@ void main() {
       LoginComponentPO page = await fixture.resolvePageObject(LoginComponentPO);
       page.username = username;
       page.password = password;
-      // TODO Click on button
-      // page.click();
+      page.click();
     });
   });
 }

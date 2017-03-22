@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:pageloader/objects.dart';
 
 class LoginComponentPO {
@@ -7,13 +8,10 @@ class LoginComponentPO {
   @ById('password')
   PageLoaderElement _password;
 
-// TODO Retrieve button element by id
-//  @ById('login')
-//  PageLoaderElement _loginButton;
+  @ByTagName('material-button')
+  PageLoaderElement _loginButton;
 
   set username(String value) => _username.type(value);
   set password(String value) => _password.type(value);
-
-// TODO Click on button
-//  Future click() => _loginButton.click();
+  Future click() => _loginButton.click();
 }

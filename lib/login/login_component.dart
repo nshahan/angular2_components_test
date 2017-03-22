@@ -26,8 +26,6 @@ class LoginComponent implements OnInit {
   ngOnInit() {
     usernameInput.inputEl.nativeElement.id = "username";
     passwordInput.inputEl.nativeElement.id = "password";
-    // TODO Set id to button
-    // loginButton.id = "login";
   }
 
   void login() {
