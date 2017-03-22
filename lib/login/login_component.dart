@@ -12,23 +12,13 @@ class LoginComponent implements OnInit {
   String username;
   String password;
 
-  @ViewChild('usernameInput')
-  MaterialInputComponent usernameInput;
-
-  @ViewChild('passwordInput')
-  MaterialInputComponent passwordInput;
-
-  @ViewChild('loginButton')
-  MaterialButtonComponent loginButton;
 
   LoginComponent(this._loginService);
 
-  ngOnInit() {
-    usernameInput.inputEl.nativeElement.id = "username";
-    passwordInput.inputEl.nativeElement.id = "password";
-  }
+  ngOnInit() {}
 
   void login() {
+    print("$username $password");
     _loginService.login(username, password);
   }
 }
