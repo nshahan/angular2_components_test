@@ -8,7 +8,7 @@ class LoginComponentPO {
   @ById('password')
   PageLoaderElement _password;
 
-  @ByTagName('material-button')
+  @ById('login-button')
   PageLoaderElement _loginButton;
 
   set username(String value) => _username.type(value);
