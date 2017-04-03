@@ -29,9 +29,10 @@ void main() {
       var fixture = await testBed.create();
 
       LoginComponentPO page = await fixture.resolvePageObject(LoginComponentPO);
-      page.username = username;
-      page.password = password;
-      page.click();
+      await page.setUsername(username);
+      await page.setPassword(password);
+      await fixture.update();
+      await page.click();
     });
   });
 }
